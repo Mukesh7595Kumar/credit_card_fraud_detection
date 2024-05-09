@@ -1,0 +1,51 @@
+/* Base styles */
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+  padding: 20px;
+  border: 4px solid #2ecc71; /* Change border color to a shade of green */
+  margin: 2% auto; /* Center the content horizontally */
+  background-color: #f0f3f6; /* Change background color to a light gray */
+}
+
+header {
+  font-size: 2em;
+  color: #2ecc71; /* Change header text color to green */
+  margin-bottom: 20px; /* Add margin to the bottom of the header */
+}
+
+.btn-info {
+  border: none; /* Remove border */
+  padding: 12px 20px; /* Increase padding */
+  margin: 15px;
+  background-color: #3498db; /* Change button background color to blue */
+  color: #fff; /* Change button text color to white */
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-info:hover {
+  background-color: #2980b9; /* Darken button color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow on hover */
+}
+
+.ml-container {
+  font-size: 1.4em;
+}
+
+.ml-container textarea {
+  width: 100%;
+  padding: 10px; /* Add padding to textarea */
+  font-family: 'Quicksand', sans-serif; /* Change font for textarea */
+  border: 2px solid #ccc; /* Add border to textarea */
+  border-radius: 5px; /* Add border radius */
+  margin-bottom: 20px; /* Add margin to the bottom of textarea */
+}
+
+/* Add your additional styles below this line */

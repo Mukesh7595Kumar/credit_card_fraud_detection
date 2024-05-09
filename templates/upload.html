@@ -1,0 +1,36 @@
+<!-- upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1>
+          <p style="text-align: center">Credit Card Fraud Detection Web Application</p>
+        </h1>
+        </div>
+    </header>
+    <div class="ml-container">
+      <h2>
+          <p style="text-align: center">
+            Upload Feature set file:
+          </p>
+      </h2>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    </div>
+</body>
+</html>

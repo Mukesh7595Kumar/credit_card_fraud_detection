@@ -13,7 +13,7 @@ clf = xgb.Booster()
 clf.load_model(model_filepath)
 
 path = '/content/drive/MyDrive/Project/templates1'
-style = '/content/drive/MyDrive/Project/static1'
+style = '/content/drive/MyDrive/Project/static'
 
 app = Flask(__name__, template_folder=path, static_folder=style)
 

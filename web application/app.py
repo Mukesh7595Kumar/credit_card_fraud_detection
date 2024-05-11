@@ -33,7 +33,7 @@ def upload_file():
     else:
         ul = 'C:/Users/srini/PycharmProjects/pythonProject/uploads/'
         file.save(ul + file.filename)
-        global_df = pd.read_excel(upath + file.filename)
+        global_df = pd.read_excel(ul + file.filename)
         global_df.set_index('Transaction_ID', inplace=True)
         return redirect(url_for('t_id'))
 

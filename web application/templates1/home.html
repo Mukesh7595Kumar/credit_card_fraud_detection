@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1>Credit Card Fraud Detection Web App</h1>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+
+
+    <div class="ml-container">
+      <p style="text-align: center">
+        Enter 30 features:
+      </p>
+
+      <form action="{{ url_for('predict')}}" method="POST">
+        <!-- <input type="text" name="comment"/> -->
+        <div class="justify">
+          <textarea name="message" rows="3" cols="10"></textarea>
+        </div>
+        <br/>
+	
+	<div>
+            <p style="...">
+                Select Model:
+            </p>
+            <select name="choice">
+                <option value="lstm">LSTM-RNN Model</option>
+                <option value="xgb">XGB Model</option>
+            </select>
+        </div>
+        <br><br>
+
+        <input type="submit" class="btn-info" value="PREDICT" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -13,7 +13,6 @@ clf.load_model(model_filepath)
 
 path = 'C:/Users/srini/PycharmProjects/pythonProject/templates'
 style = 'C:/Users/srini/PycharmProjects/pythonProject/static'
-upath = 'C:/Users/srini/PycharmProjects/pythonProject/uploads/'
 
 app = Flask(__name__, template_folder=path, static_folder=style)
 global_df = None
